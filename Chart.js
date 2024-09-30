@@ -31,7 +31,6 @@ function atualizarGrafico() {
 
     dadosGrafico.labels.push(novoMes);
     dadosGrafico.datasets[0].data.push(novoValor);
-
     meuGrafico.update(); 
 }
 
