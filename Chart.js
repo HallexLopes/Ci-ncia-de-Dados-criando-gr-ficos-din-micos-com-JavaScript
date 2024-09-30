@@ -25,16 +25,14 @@ const config = {
 
 const meuGrafico = new Chart(ctx, config);
 
-// Função para atualizar os dados do gráfico dinamicamente
 function atualizarGrafico() {
-    const novoValor = Math.floor(Math.random() * 100); // Gera um valor aleatório
-    const novoMes = Mês ${dadosGrafico.labels.length + 1}; // Novo mês
+    const novoValor = Math.floor(Math.random() * 100);
+    const novoMes = Mês ${dadosGrafico.labels.length + 1}; 
 
     dadosGrafico.labels.push(novoMes);
     dadosGrafico.datasets[0].data.push(novoValor);
 
-    meuGrafico.update(); // Atualiza o gráfico
+    meuGrafico.update(); 
 }
 
-// Atualizar o gráfico a cada 2 segundos
 setInterval(atualizarGrafico, 2000);
